@@ -1,0 +1,25 @@
+version: "3.8"
+
+networks:
+  boilerplate-network:
+    name: boilerplate-network
+    external: true
+
+services:
+  php:
+    container_name: boilerplate-php
+    env_file:
+      - .env
+    networks:
+      - boilerplate-network
+    restart: unless-stopped
+
+  caddy:
+    container_name: boilerplate-caddy
+    depends_on:
+      - php
+    ports:
+      - "8950:80"
+    networks:
+      - boilerplate-network
+    restart: unless-stopped
