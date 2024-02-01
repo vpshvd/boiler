@@ -1,3 +1,5 @@
+.idea/
+
 # Created by https://www.toptal.com/developers/gitignore/api/symfony,phpstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=symfony,phpstorm
 
@@ -6,13 +8,11 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
-./.idea
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-./docker-compose.override.yml
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -148,7 +148,6 @@ fabric.properties
 /bin/*
 !bin/console
 !bin/symfony_requirements
-/vendor/
 
 # Assets and user uploads
 /web/bundles/
@@ -175,3 +174,9 @@ fabric.properties
 /web/js/
 
 # End of https://www.toptal.com/developers/gitignore/api/symfony,phpstorm
+
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+###< symfony/phpunit-bridge ###
+/var/
+/vendor/

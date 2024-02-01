@@ -11,6 +11,10 @@
 **/.gitattributes
 **/.gitignore
 **/.gitmodules
+**/compose.*.yaml
+**/compose.*.yml
+**/compose.yaml
+**/compose.yml
 **/docker-compose.*.yaml
 **/docker-compose.*.yml
 **/docker-compose.yaml
@@ -19,6 +23,7 @@
 **/Thumbs.db
 .github/
 docs/
+public/bundles/
 tests/
 var/
 vendor/
@@ -27,4 +32,3 @@ vendor/
 .env.local
 .env.local.php
 .env.test
-.idea/
