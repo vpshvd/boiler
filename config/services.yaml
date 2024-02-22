@@ -22,3 +22,12 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    App\Services\ActivityServiceInterface:
+        class: App\Services\ActivityService
+
+    App\Client\BoredomApiClientInterface:
+        class: App\Client\BoredomApiClient
+        arguments:
+            $client: '@http_client'
+            $apiUrl: '%env(BOREDOM_API_URL)%'
+
